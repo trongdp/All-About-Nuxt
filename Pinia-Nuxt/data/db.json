@@ -1,0 +1,96 @@
+{
+    "task": [
+        {
+            "id" : 1,
+            "title": "get a wand",
+            "isFav": true
+        },
+        {
+            "id" : 2,
+            "title": "go to hogward",
+            "isFav": false
+        },
+        {
+            "id" : 3,
+            "title": "go to griffindor",
+            "isFav": true
+        },
+        {
+            "id" : 4,
+            "title": "win a wizard cup",
+            "isFav": false
+        },
+        {
+            "id" : 5,
+            "title": "defeat voldemort",
+            "isFav": true
+        },
+        {
+            "id": 6,
+            "title":"marry hermione",
+            "isFav":false
+        },
+        {
+            "id": 7,
+            "title":"have a child",
+            "isFav":true
+        },
+        {
+            "id": 8,
+            "title": "become a headmaster",
+            "isFav":false
+        },
+        {
+            "id": 9,
+            "title": "die",
+            "isFav":true
+        },
+        {
+            "id": 10,
+            "title": "become a ghost",
+            "isFav":false
+        },{
+            "id": 11,
+            "title": "ressurect",
+            "isFav":true
+        },
+        {
+            "id":12,
+            "title":"getting divorce",
+            "isFav":false
+        },
+        {
+            "id":13,
+            "title":"be friends with Severus Snape",
+            "isFav":true
+        },
+        {
+            "id":14,
+            "title":"be friends with Draco Malfoy",
+            "isFav":false
+        },
+        {
+            "id":15,
+            "title":"go to Azkaban",
+            "isFav":false
+        },
+        {
+            "id":16,
+            "title":"break out of Azkaban",
+            "isFav":false
+        },
+        {
+            "id":17,
+            "title":"become a Death Eater",
+            "isFav":true
+        },
+        {
+            "id":18,
+            "title":"become a Dark Lord",
+            "isFav":false
+        }
+    ]
+}
+
+
+
