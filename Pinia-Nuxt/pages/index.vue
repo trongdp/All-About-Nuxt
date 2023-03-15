@@ -14,8 +14,10 @@
     const taskStore = useTaskStore();
     const totalCount = computed(() => taskStore.totalCount);
     const favCount = computed(() => taskStore.favCount);
+
+    taskStore.getTasks();
+
 </script>
 
 <style scoped>
-
-</style>
+</style>``

@@ -1,9 +1,6 @@
 export const useTaskStore = defineStore('taskStore',{
     state: () => ({
         tasks: [
-            {id: 1, title: 'Buy some milk', isFav: true},
-            {id: 2, title: 'Buy some bread', isFav: true},
-            {id: 3, title: 'Buy some cheese', isFav: false}
         ],
         name : 'Trong',
     }),
@@ -24,6 +21,11 @@ export const useTaskStore = defineStore('taskStore',{
         }
     },
     actions: {
+        //get Tasks from localhost
+        async getTasks(){
+            const res = await $fetch('http://localhost:3000/tasks');
+            this.tasks = res;
+        },
         addTask(task){
             const newTask = {
                 id: Math.floor(Math.random() * 100000),
@@ -31,6 +33,13 @@ export const useTaskStore = defineStore('taskStore',{
                 isFav: false
             }
             this.tasks.push(newTask);
+        },
+        deleteTask(id){
+            this.tasks = this.tasks.filter(task => task.id !== id);
+        },
+        addTasktoFav(id){
+            const task = this.tasks.find(task => task.id === id);
+            task.isFav = !task.isFav;
         }
     }
 })
