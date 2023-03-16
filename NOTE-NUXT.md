@@ -60,3 +60,15 @@ npm install -g json-server
 json-server -w ./data/db.json : để host lên local host, theo nguyên tắc mỗi property là 1 endpoint
 
 Lúc này có thể dùng fetch hoặc axios để lấy về fetch("http://localhost:3000/tasks")
+
+
+## Để luôn luôn host ở cổng 8000 cho nuxt
+
+HOST=0 PORT=8000 npm run dev
+
+hoặc ở package.json
+
+"scripts": {
+  "dev": "nuxt dev --port 8000",
+}
+
