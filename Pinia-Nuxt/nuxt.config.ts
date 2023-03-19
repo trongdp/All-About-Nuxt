@@ -22,12 +22,16 @@ export default defineNuxtConfig({
       '@pinia/nuxt',
       '@nuxtjs/tailwindcss'
     ],
+    plugins: [
+      '~/plugins/vAutoAnimate.js'
+    ],
     pinia: {
       autoImports: [
         // automatically imports `defineStore`
         'defineStore', // import { defineStore } from 'pinia'
         'storeToRefs', // import { storeToRefs } from 'pinia'
         ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+        'storeToRefs', // import { storeToRefs } from 'pinia
       ],
     }
 })
